@@ -15,7 +15,7 @@
     transform: skewY(-6deg);
     margin-top: -10rem;
 
-    //all(*) direction child of current class
+    //all (ie. *) direct child of current class
     & > * {
         transform: skewY(6deg);
     }
