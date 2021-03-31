@@ -22,14 +22,24 @@
         //for floated properties, it's better to use transform rather than margin and padding
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
-        background-clip: padding-box;
     }
 
     &__img {
         height: 100%;
-        transform: translateX(-1rem) scale(1.1);
+        transform: scale(1.1);
         transition: all .5s;
-        background-clip: padding-box;
+
+        &-1 {
+            background-image: url(../img/testimonial1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &-2 {
+            background-image: url(../img/testimonial2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
     }
 
     &__text {
@@ -57,7 +67,7 @@
     }
 
     &:hover &__img {
-        transform: translateX(-1rem) scale(1);
+        transform: scale(1);
         filter: blur(3px) brightness(80%);
     }
 }

@@ -343,13 +343,19 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
-    position: relative;
-    background-clip: padding-box; }
+    position: relative; }
   .story__img {
     height: 100%;
-    transform: translateX(-1rem) scale(1.1);
-    transition: all .5s;
-    background-clip: padding-box; }
+    transform: scale(1.1);
+    transition: all .5s; }
+    .story__img-1 {
+      background-image: url(../img/testimonial1.jpg);
+      background-size: cover;
+      background-position: center; }
+    .story__img-2 {
+      background-image: url(../img/testimonial2.jpg);
+      background-size: cover;
+      background-position: center; }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
@@ -367,7 +373,7 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .story:hover .story__img {
-    transform: translateX(-1rem) scale(1);
+    transform: scale(1);
     filter: blur(3px) brightness(80%); }
 
 .header {
